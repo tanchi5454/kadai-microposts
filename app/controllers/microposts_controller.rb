@@ -32,7 +32,7 @@ class MicropostsController < ApplicationController
   end
   
   def favorite?(micropost)
-    self.likes.include?(micropost)
+    self.favorite.include?(micropost)
   end
   
   private
